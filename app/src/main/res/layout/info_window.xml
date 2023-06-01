@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0181025">
+
+    <TextView
+        android:id="@+id/logo_info"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/public_pixel_rus"
+        android:gravity="center"
+        android:text="ИНФОРМАЦИЯ"
+        android:textColor="#5d2f98"
+
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_info"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/public_pixel_rus"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="Автор:"
+
+        android:textColor="@color/pink"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_info" />
+
+    <TextView
+        android:id="@+id/link_autor"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/public_pixel_rus"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="github.com/zer0O0O00"
+
+        android:textColor="@color/pink"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_info" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_info_window"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/public_pixel_rus"
+        android:text="Хорошо"
+        android:textColor="@color/pink"
+
+        android:textSize="20dp"
+        app:cornerRadius="-10dp"
+        app:layout_constraintEnd_toEndOf="@+id/link_autor"
+
+        app:layout_constraintStart_toStartOf="@+id/link_autor"
+        app:layout_constraintTop_toBottomOf="@+id/link_autor"
+        app:strokeColor="@color/stroke_purple"
+        app:strokeWidth="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

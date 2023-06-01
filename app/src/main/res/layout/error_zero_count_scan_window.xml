@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <TextView
+        android:id="@+id/logo_error"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:fontFamily="@font/public_pixel_rus"
+        android:gravity="center"
+        android:text="ОШИБКА!"
+        android:textColor="@color/red"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/zero_count_error"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_error"
+
+        android:fontFamily="@font/public_pixel_rus"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="Вы ещё ничего не отсканировали!"
+        android:textColor="@color/pink"
+        android:textSize="18dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_error_zero_count_scan_ok"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/zero_count_error"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/zero_count_error"
+        app:layout_constraintTop_toBottomOf="@+id/zero_count_error"
+
+        android:fontFamily="@font/public_pixel_rus"
+        android:text="Хорошо"
+        android:textColor="@color/pink"
+        android:textSize="20dp"
+
+        app:cornerRadius="-10dp"
+        app:strokeColor="@color/stroke_purple"
+        app:strokeWidth="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

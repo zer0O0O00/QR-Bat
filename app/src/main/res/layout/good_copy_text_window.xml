@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+
+    <TextView
+        android:id="@+id/logo_good"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:fontFamily="@font/public_pixel_rus"
+        android:gravity="center"
+        android:text="Успех!"
+        android:textColor="@color/green"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/text_good"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_good"
+
+        android:fontFamily="@font/public_pixel_rus"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="Текст успешно скопирован в буфер обмена."
+        android:textColor="@color/pink"
+        android:textSize="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_good_copy_text_ok"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_good"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/text_good"
+        app:layout_constraintTop_toBottomOf="@+id/text_good"
+
+        android:fontFamily="@font/public_pixel_rus"
+        android:text="Хорошо"
+        android:textColor="@color/pink"
+        android:textSize="20dp"
+
+        app:cornerRadius="-10dp"
+        app:strokeColor="@color/stroke_purple"
+        app:strokeWidth="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
